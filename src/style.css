@@ -1,0 +1,181 @@
+:root {
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+  --White: hsl(0, 0%, 100%);
+  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Light-grayish-blue-1: hsl(211, 68%, 94%);
+  --Light-grayish-blue-2: hsl(205, 33%, 90%);
+  --Grayish-blue: hsl(219, 14%, 63%);
+  --Dark-grayish-blue: hsl(219, 12%, 42%);
+  --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.container {
+  padding: 15px;
+  margin: auto;
+  max-width: 800px;
+  background-color: var(--White);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header span {
+  background-color: var(--Blue);
+  color: var(--White);
+  padding: 4px 15px;
+  border-radius: 8px;
+}
+
+.header button {
+  border: none;
+  background-color: transparent;
+  font-size: 15px;
+  color: var(--Dark-grayish-blue);
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.notes {
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-top: 15px;
+  background-color: var(--Very-light-grayish-blue);
+  display: flex;
+  align-items: center;
+}
+
+.new {
+  background-color: var(--Light-grayish-blue-1);
+}
+
+.new .text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.notes .content-wrapper .red-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: var(--Red);
+  border-radius: 10px;
+  margin-left: 5px;
+}
+.notes img {
+  height: 80px;
+}
+
+.notes .rizky {
+  align-self: flex-start;
+}
+
+.notes .content-wrapper {
+  margin-left: 15px;
+}
+
+.notes .content-wrapper p {
+  margin: 0;
+  color: var(--Dark-grayish-blue);
+}
+
+.notes .content-wrapper b {
+  color: black;
+}
+
+.notes .content-wrapper .time {
+  color: var(--Grayish-blue);
+  font-size: 16px;
+}
+
+.notes .content-wrapper .chess {
+  color: var(--Blue);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.notes .content-wrapper span {
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.notes .content-wrapper .message {
+  border: 1px solid var(--Grayish-blue);
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.notes .content-wrapper .message:hover {
+  background-color: var(--Light-grayish-blue-1);
+}
+
+.flex-note {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notes .chess-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notes .chess-image {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.attribution {
+  background-color: var(--Dark-grayish-blue);
+  padding: 30px;
+  color: var(--White);
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--Very-dark-blue);
+  font-weight: 800;
+  margin-left: 10px;
+}
+
+/* ==========Desktop Responsive Design========= */
+
+@media (min-width: 768px) {
+  body {
+    background-color: var(--Very-light-grayish-blue);
+  }
+
+  .container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 25px;
+  }
+}
+
+/* ======Style using JS============ */
+
+.inactive {
+  background-color: var(--Very-light-grayish-blue);
+}
+
+.notes .content-wrapper .not-active {
+  display: none;
+}
